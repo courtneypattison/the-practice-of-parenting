@@ -2,18 +2,21 @@
   "title": "Home",
   "content": "intro.md",
   "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
-    "image": "../images/gallery/react-context.jpg"
+    "title": "Book",
+    "link": "/book",
+    "copy": "The Practice of Parenting Teens: How to...",
+    "image": "../images/gallery/book.jpg"
   },
   {
-    "title": "Page Transitions",
-    "copy": "Component-based for easy usage.",
-    "image": "../images/gallery/page-transitions.jpg"
+    "title": "Events",
+    "link": "/events",
+    "copy": "Resurrection Catholic Secondary School...",
+    "image": "../images/gallery/school.jpg"
   },
   {
-    "title": "Intersection Observer",
-    "copy": "Including a polyfill for Safari.",
-    "image": "../images/gallery/intersection-observer.jpg"
+    "title": "About Rosemary",
+    "link": "/about",
+    "copy": "Rosemary is a mother/step-mother to 5...",
+    "image": "../images/gallery/rosemary.jpg"
   }]
 }
