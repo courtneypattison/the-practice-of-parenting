@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
@@ -13,6 +14,13 @@ const About = ({ data }) => (
         dangerouslySetInnerHTML={{
           __html: data.aboutJson.content.childMarkdownRemark.html,
         }}
+      />
+      <Img
+        style={{ maxWidth: '50%' }}
+        fluid={
+          data.aboutJson.image ? data.aboutJson.image.childImageSharp.fluid : {}
+        }
+        alt=""
       />
     </Box>
   </Layout>
@@ -31,6 +39,13 @@ export const query = graphql`
       content {
         childMarkdownRemark {
           html
+        }
+      }
+      image {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
