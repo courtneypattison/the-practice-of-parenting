@@ -1,16 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Gatsby Universal`,
-  siteTitleShort: `GatsbyU`,
-  siteDescription: `An opinionated starter for Gatsby.`,
-  siteUrl: `https://gu.fabianschultz.com`,
+  siteTitle: `The Practice of Parenting`,
+  siteTitleShort: `PP`,
+  siteDescription: `Author of 'The Practice of Parenting Teens' Rosemary Fernandes-Walker's personal website.`,
+  siteUrl: `https://thepracticeofparenting.ca/`,
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: path.resolve(__dirname, `src/images/icon.png`),
   social: {
-    twitter: `gatsbyjs`,
-    fbAppId: `966242223397117`,
+    twitter: `ThePracticeOfP1`,
+    fbAppId: `303008857295715`,
   },
 };
