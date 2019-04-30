@@ -14,7 +14,6 @@ const Index = ({ data }) => (
       </Title>
     </Box>
     <Gallery items={data.homeJson.gallery} />
-    <div style={{ height: '50vh' }} />
   </Layout>
 );
 
@@ -35,6 +34,7 @@ export const query = graphql`
         }
       }
       gallery {
+        link
         title
         copy
         image {
